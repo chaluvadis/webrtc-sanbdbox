@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebRTC Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <h3>Simple WebRTC Demo</h3>
+        </header>
+        <div class="video-section">
+            <video id="video">
+                No Streaming data
+            </video>
+        </div>
+        <div id="video-actions">
+            <button class="btn btn-dark" id="photo-button">Take Picture</button>
+            <select class="btn select" id="photo-filter">
+                <option value="None">Normal</option>
+                <option value="grayscale(100%)">GrayScale</option>
+                <option value="sepia(100%)">Sepia</option>
+                <option value="blur(10px)">Blur</option>
+                <option value="hue-rotate(90deg)">Hue</option>
+                <option value="invert(100%)">Invert</option>
+                <option value="contrast(200%)">Contrast</option>
+            </select>
+            <button class="btn btn-light" id="clear-button">Clear</button>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="bottom-container">
+            <div id="photos"></div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
